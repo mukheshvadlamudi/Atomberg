@@ -7,7 +7,8 @@ import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    {/* Added basename so React Router keeps /Atomberg/ in the URL on GitHub Pages */}
+    <BrowserRouter basename="/Atomberg/">
       <AppProvider>
         <App />
       </AppProvider>
