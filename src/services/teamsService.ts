@@ -52,7 +52,7 @@ export const sendTeamsNotification = async (params: TeamsParams) => {
             {
               type: 'Action.OpenUrl',
               title: 'Open Portal',
-              url: 'http://localhost:5174'
+              url: window.location.origin + window.location.pathname
             }
           ]
         }
